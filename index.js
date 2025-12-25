@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const features = Array.isArray(data.features) ? data.features : [];
         const count = features.length;
 
-        // Summary required by lab: "Current watches... for X: N"
+        // "Current watches... for X: N"
         const summary = document.createElement("p");
         summary.textContent = `${data.title}: ${count}`;
         alertsDisplay.append(summary);
